@@ -18,11 +18,15 @@ export default function Nav() {
 					/>
 				</div>
 				<div className='flex flex-row justify-end text-lg uppercase font-thin w-1/3 text-white'>
-					<Link to='/login' className='flex flex-col items-center'>
+					<Link
+						to='/login'
+						className='flex flex-col items-center hover:text-success transition ease-in-out duration-500'>
 						<FaUser />
 						<p>Log In</p>
 					</Link>
-					<Link to='/cart' className='flex flex-col items-center pl-10'>
+					<Link
+						to='/cart'
+						className='flex flex-col items-center pl-10 hover:text-success transition ease-in-out duration-500'>
 						<FaShoppingBag />
 						<p>Bag</p>
 					</Link>
