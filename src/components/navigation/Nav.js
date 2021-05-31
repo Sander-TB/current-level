@@ -7,8 +7,9 @@ export default function Nav() {
 		<header className='flex flex-col'>
 			<nav className='flex flex-row items-center py-5 justify-between px-20 w-full bg-gray'>
 				<div className='w-1/3 justify-start'>
-					<Link to='/'>
+					<Link to='/' className='flex flex-row items-center'>
 						<img src={Logo} alt='Logo' className='w-20' />
+						<p className='pl-3 text-lg text-white font-thin'>Current Level</p>
 					</Link>
 				</div>
 				<div className='w-1/3'>

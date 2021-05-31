@@ -3,7 +3,10 @@ module.exports = {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		colors: {
-			white: "#D4DAE5",
+			white: {
+				DEFAULT: "#D4DAE5",
+				lighter: "#fff",
+			},
 			black: "#000",
 			blur: "rgba(0, 0, 0, 0.3)",
 			gray: {
@@ -23,7 +26,14 @@ module.exports = {
 		extend: {
 			inset: {
 				100: "36rem",
-				75: "90%",
+				75: "80%",
+				90: "90%",
+			},
+			blur: {
+				xs: "2px",
+			},
+			width: {
+				ch: "50ch",
 			},
 		},
 	},

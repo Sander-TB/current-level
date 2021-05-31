@@ -19,7 +19,6 @@ export default function Homepage() {
 			async function getHeroImage() {
 				try {
 					const response = await axios.get(url);
-					console.log(response.data);
 					setHero(response.data);
 				} catch (e) {
 					console.log(e);
@@ -33,6 +32,9 @@ export default function Homepage() {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 		[]
 	);
+
+	if (loading) return <div>Loading..</div>;
+	if (error) return <div>An error happened</div>;
 	return (
 		<div>
 			<div className='h-64 bg-white text-center py-5 flex flex-col items-center justify-center'>
@@ -51,8 +53,8 @@ export default function Homepage() {
 				</div>
 				<button
 					onClick={handleClick}
-					className='font-thin text-5xl p-5 uppercase shadow-lg bg-white absolute top-75 left-100 hover:bg-success transition ease-in-out duration-500'>
-					Show Now
+					className='font-thin text-5xl p-5 uppercase shadow-lg bg-white absolute top-90 left-100 hover:bg-success transition ease-in-out duration-500'>
+					Shop Now
 				</button>
 			</section>
 		</div>
