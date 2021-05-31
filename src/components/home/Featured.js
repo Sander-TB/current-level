@@ -20,7 +20,6 @@ export default function Featured() {
 			async function getFeatured() {
 				try {
 					const response = await axios.get(url);
-					console.log(response.data);
 					setFeatured(response.data);
 				} catch (e) {
 					setError(error);

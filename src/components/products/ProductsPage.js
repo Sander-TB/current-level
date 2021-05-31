@@ -31,10 +31,16 @@ export default function ProductsPage() {
 	if (error) return <div>An error happened</div>;
 
 	return (
-		<section className='my-20 mx-20'>
+		<section className='my-20 mx-20 flex flex-col'>
 			<h2 className='uppercase text-center text-gray font-thin text-4xl mb-16'>
 				Our Products
 			</h2>
+			<div className='text-center w-full mb-10'>
+				<input
+					placeholder='Search'
+					className='font-thin border border-gray py-2 px-5 w-1/2 bg-white text-lg'
+				/>
+			</div>
 			<div className='grid grid-cols-3 gap-8'>
 				{featured.map((product) => {
 					return (
