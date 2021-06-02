@@ -38,7 +38,7 @@ export default function Featured() {
 
 	return (
 		<section className='my-20'>
-			<h2 className='uppercase text-center text-gray font-thin text-3xl mb-16'>
+			<h2 className='uppercase text-center text-gray-darker font-thin text-3xl mb-16'>
 				F<span className='underline'>eatured Product</span>s
 			</h2>
 			<div className='flex flex-row'>

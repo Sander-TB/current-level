@@ -25,12 +25,7 @@ export default function Nav() {
 					<Link
 						to='/cart'
 						className='flex flex-col items-center hover:text-success transition ease-in-out duration-500'>
-						<p>Cart{}</p>
-					</Link>
-					<Link
-						to='/contact'
-						className='pl-10 hover:text-success transition ease-in-out duration-500'>
-						Contact
+						<p>Cart</p>
 					</Link>
 				</div>
 			</nav>

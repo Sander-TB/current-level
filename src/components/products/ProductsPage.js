@@ -32,7 +32,7 @@ export default function ProductsPage() {
 
 	return (
 		<section className='my-20 mx-20 flex flex-col'>
-			<h2 className='uppercase text-center text-gray font-thin text-4xl mb-16'>
+			<h2 className='uppercase text-center text-gray-darker font-thin text-4xl mb-16'>
 				Our Products
 			</h2>
 			<div className='text-center w-full mb-10'>

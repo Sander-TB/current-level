@@ -11,7 +11,8 @@ module.exports = {
 			blur: "rgba(0, 0, 0, 0.3)",
 			gray: {
 				lighter: "#B1B6BF",
-				DEFAULT: "#3B3D40",
+				DEFAULT: "#707070",
+				darker: "#3B3D40",
 			},
 			yellow: {
 				warning: "#ffc107",

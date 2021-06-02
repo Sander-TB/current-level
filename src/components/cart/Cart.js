@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
 const cartFromLS = JSON.parse(localStorage.getItem("cart"));
