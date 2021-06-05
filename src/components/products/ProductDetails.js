@@ -52,79 +52,111 @@ export default function ProductDetails() {
 
 	return (
 		<>
-			<button onClick={goBack} className='self-start px-3 border mt-10'>
-				<IoArrowUndoOutline className='inline mb-1' /> Go Back
-			</button>
 			<div key={product.id} className='flex flex-col m-20'>
+				<button onClick={goBack} className='self-start px-3 border mb-10'>
+					<IoArrowUndoOutline className='inline mb-1' /> Go Back
+				</button>
 				<div className='flex flex-row'>
-					<div className='w-1/2 mr-20'>
+					<div className='w-2/3 mr-20'>
 						<img src={product.image_url} alt={product.title} />
 					</div>
-					<div className='flex flex-col w-1/2'>
+					<div className='flex flex-col w-1/3'>
 						<h1 className='text-5xl tracking-widest uppercase pb-10'>
 							{product.title}
 						</h1>
-						<h3 className='text-xl mb-5'>{product.brand}</h3>
-						<div className='flex flex-row'>
-							<div className='flex'>
-								<FaStar className='inline mr-1' />
-								<FaStar className='inline mr-1' />
-								<FaStar className='inline mr-1' />
-								<p className='text-gray underline'> 3 Reviews</p>
+						<h3 className='text-2xl mb-5 tracking-wider'>{product.brand}</h3>
+						<div className='flex flex-row mt-2 justify-between'>
+							<div className='flex flex-col'>
+								<div className='flex'>
+									<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+									<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+									<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+									<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+									<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+								</div>
+								<p className='text-gray underline mt-2'> 3 Reviews</p>
 							</div>
-							<div className='flex flex-col border border-gray-lighter ml-10'>
+							<div className='flex flex-col border border-gray-lighter '>
 								<div className='text-center py-3'>
 									<p className='text-md text-gray'> KR {product.price} NOK</p>
 								</div>
 								<div className='flex flex-row'>
-									<div className='flex flex-col text-center border-t border-gray-lighter'>
-										<input
-											className='border border-white w-1/4 self-center mt-2'
-											type='number'
-											id='quantity'
-											name='quantity'
-											min='1'
-										/>
-										<label> Qty:</label>
-									</div>
 									<button
 										onClick={addToCart}
-										className='bg-black uppercase text-white font-light hover:bg-success hover:text-black transition ease-in-out duration-500 text-2xl px-10 py-1'>
+										className='bg-black uppercase text-white font-light hover:bg-success hover:text-black transition ease-in-out duration-500 text-2xl py-3 px-10'>
 										Add To Cart
 									</button>
 								</div>
 							</div>
 						</div>
-						<p className='uppercase text-md mt-10 mb-5'>Description</p>
-						<p className='leading-loose'>{product.description}</p>
+						<p className='text-gray uppercase text-md mt-10 mb-5'>
+							Description
+						</p>
+						<p className='text-gray leading-loose'>{product.description}</p>
 					</div>
 				</div>
 
-				<div className='flex flex-col'>
+				<div className='flex flex-col mt-20'>
 					<h2 className='uppercase text-3xl mb-2'>
 						R<span className='underline'>eview</span>s
 					</h2>
 					<div className='flex'>
-						<FaStar className='inline mr-1' />
-						<FaStar className='inline mr-1' />
-						<FaStar className='inline' />
-						<p className='pl-2 mb-5 text-gray-lighter underline'> 3 Reviews</p>
+						<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+						<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+						<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+						<FaStar fill='#fedc45' className='inline mr-1 text-xl' />
+						<FaStar fill='#fedc45' className='inline text-xl' />
+						<p className='pl-2 text-gray-lighter underline'> 3 Reviews</p>
 					</div>
 					<div className='flex flex-row'>
-						<div className='flex flex-col border-r border-gray'>
+						<div className='flex flex-col border-r border-gray pt-5'>
 							<div className='flex'>
-								<p className='uppercase mr-5'>Name Nameson</p>
-								<FaStar className='inline mr-1' />
-								<FaStar className='inline mr-1' />
-								<FaStar className='inline mr-1' />
-								<FaStar className='inline mr-1' />
-								<FaStar className='inline' />
+								<p className='uppercase mr-5 text-2xl'>Name Nameson</p>
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline text-2xl' />
 							</div>
-							<p className='uppercase text-gray-lighter text-sm mb-5'>
+							<p className='uppercase text-gray-lighter text-sm pb-5'>
 								Verified Buyer
 							</p>
-							<p className=''>Awsome Product</p>
-							<p className='text-gray'>
+							<p className='text-xl'>Awsome Product</p>
+							<p className='text-gray pr-4'>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+						<div className='flex flex-col pl-5 border-r border-gray pt-5'>
+							<div className='flex'>
+								<p className='uppercase mr-5 text-2xl'>Nils Smith</p>
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline text-2xl' />
+							</div>
+							<p className='uppercase text-gray-lighter text-sm pb-5'>
+								Verified Buyer
+							</p>
+							<p className='text-xl capitalize'>Cool Product</p>
+							<p className='text-gray pr-4'>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+						<div className='pl-5 flex flex-col pt-5'>
+							<div className='flex'>
+								<p className='uppercase mr-5 text-2xl'>John Doe</p>
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline mr-1 text-2xl' />
+								<FaStar className='inline text-2xl' />
+							</div>
+							<p className='uppercase text-gray-lighter text-sm pb-5'>
+								Verified Buyer
+							</p>
+							<p className='text-xl capitalize'>Could be better</p>
+							<p className='text-gray pr-4'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
 						</div>

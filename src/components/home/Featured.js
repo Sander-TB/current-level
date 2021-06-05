@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Featured() {
 	const [featured, setFeatured] = useState("");
@@ -9,10 +9,8 @@ export default function Featured() {
 
 	const url = "http://localhost:1337/products";
 
-	const history = useHistory();
-
 	function handleClick() {
-		history.push("/products");
+		window.location.reload(false);
 	}
 
 	useEffect(
@@ -49,11 +47,12 @@ export default function Featured() {
 								<img src={product.image_url} alt={product.title} />
 								<div className='text-center relative -top-1/2'>
 									<h2 className='text-4xl text-black'>{product.title}</h2>
-									<button
+									<Link
+										to={`/product/${product.id}`}
 										onClick={handleClick}
 										className='font-thin text-xl px-3 py-2 uppercase shadow-lg bg-white hover:bg-success transition ease-in-out duration-500'>
 										Shop Now
-									</button>
+									</Link>
 								</div>
 							</div>
 						);
