@@ -1,5 +1,6 @@
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import { MdShoppingCart } from "react-icons/md";
 
 export default function Nav() {
 	return (
@@ -24,8 +25,8 @@ export default function Nav() {
 					</Link>
 					<Link
 						to='/cart'
-						className='flex flex-col items-center hover:text-success transition ease-in-out duration-500'>
-						<p>Cart</p>
+						className='flex items-center hover:text-success transition ease-in-out duration-500'>
+						<MdShoppingCart className='mb-1' />
 					</Link>
 				</div>
 			</nav>

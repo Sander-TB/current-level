@@ -6,15 +6,12 @@ Wont have enough time to do all the updates that I want, but it will be a WIP ti
 
 Note:
 
-There is a bug in the cart I'm still working on.
-After adding a product to the cart and going to the cart page, you must reload to see result.
+Cart page is still WIP, struggling to make it work properly
 
 Todo:
 
 - [] customer login page
 - [] admin login
 - [] admin crud
-- [] style cart page
-- [] style prod. detail page
 
 - [] contact page?
