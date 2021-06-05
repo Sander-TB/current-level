@@ -37,7 +37,7 @@ export default function Homepage() {
 	if (error) return <div>An error happened</div>;
 	return (
 		<div>
-			<div className='h-64 bg-white text-center py-5 flex flex-col items-center justify-center'>
+			<div className='h-64 text-center py-5 flex flex-col items-center justify-center'>
 				<h1 className='text-7xl font-thin'>
 					Welcome to <span className='font-normal'>Current Level</span>
 				</h1>
