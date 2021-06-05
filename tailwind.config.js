@@ -27,6 +27,7 @@ module.exports = {
 		extend: {
 			inset: {
 				100: "36rem",
+				97: "28rem",
 				75: "80%",
 				90: "90%",
 			},

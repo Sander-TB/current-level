@@ -39,14 +39,14 @@ export default function Featured() {
 			<h2 className='uppercase text-center text-gray-darker font-thin text-3xl mb-16'>
 				F<span className='underline'>eatured Product</span>s
 			</h2>
-			<div className='flex flex-row'>
+			<div className='flex flex-col md:flex-row'>
 				{featured.map((product) => {
 					if (product.featured === true) {
 						return (
-							<div key={product.id} className='w-1/3'>
+							<div key={product.id} className='w-full md:w-1/3'>
 								<img src={product.image_url} alt={product.title} />
-								<div className='text-center relative -top-1/2'>
-									<h2 className='text-4xl text-black'>{product.title}</h2>
+								<div className='text-center relative -top-44 md:-top-1/2'>
+									<h2 className='text-4xl text-black mb-2'>{product.title}</h2>
 									<Link
 										to={`/product/${product.id}`}
 										onClick={handleClick}

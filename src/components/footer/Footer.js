@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<footer className='bg-gray text-gray-lighter flex justify-evenly font-thin py-10 text-md'>
+		<footer className='bg-gray text-gray-lighter flex justify-evenly font-thin py-10 text-sm md:text-md'>
 			<ul>
 				<li className='uppercase font-normal'>Made by:</li>
 				<li className='py-1'>
