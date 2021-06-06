@@ -12,7 +12,7 @@ export default function Footer() {
 					</a>
 				</li>
 				<li>
-					Semester Project for{" "}
+					Semester Project for
 					<a
 						href='https://www.noroff.no/'
 						target='_blank'
